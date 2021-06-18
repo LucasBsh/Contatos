@@ -45,7 +45,7 @@ namespace Contatos.Controllers
         // Para proteger-se contra ataques de excesso de postagem, ative as propriedades específicas às quais deseja se associar. 
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
 
-        public ActionResult Register([Bind(Include = "ID,nome,numero,operadora")] Numeros numeros)
+        public ActionResult Register([Bind(Include = "ID,nome,numero,Operadora")] Numeros numeros)
         {
             if (ModelState.IsValid)
             {
@@ -77,7 +77,7 @@ namespace Contatos.Controllers
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,nome,numero,operadora")] Numeros numeros)
+        public ActionResult Edit([Bind(Include = "ID,nome,numero,Operadora")] Numeros numeros)
         {
             if (ModelState.IsValid)
             {
