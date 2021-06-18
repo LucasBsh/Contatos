@@ -9,8 +9,9 @@ namespace Contatos.Models
     public class Numeros
     {
         public int ID { get; set; }
-        public string nome { get; set; }
-        public int numero { get; set; }
+        public string Nome { get; set; }
+        public int Numero { get; set; }
+        public int Operadora { get; set; }
     }
 
     public class NumerosDBContext : DbContext
