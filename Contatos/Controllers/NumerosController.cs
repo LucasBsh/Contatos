@@ -20,6 +20,14 @@ namespace Contatos.Controllers
             return View(db.Numero.ToList());
         }
 
+        // GET: Operadoras
+        public ActionResult GetOperadoras()
+        {
+            Operadora operadora = new Operadora();
+            ViewBag.Numero = new SelectList(db.Numero, "Operadora");   
+            return View(db.Numero.ToList());
+        }
+
         // GET: Numeros/Details/5
         public ActionResult Details(int? id)
         {
