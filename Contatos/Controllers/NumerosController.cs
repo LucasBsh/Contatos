@@ -24,7 +24,7 @@ namespace Contatos.Controllers
         public ActionResult GetOperadoras()
         {
             Operadora operadora = new Operadora();
-            ViewBag.Numero = new SelectList(db.Numero, "Operadora");   
+              
             return View(db.Numero.ToList());
         }
 
